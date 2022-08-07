@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DBB036F-DB4E-4FD1-9CD5-14C4DC29D2E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YENİDOĞAN_V3</RootNamespace>
+    <AssemblyName>YENİDOĞAN V3</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftpupload.net/htdocs/yd/guncel/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://oktaysup.cf/yd/kur/</InstallUrl>
+    <SupportUrl>ftp://ftpupload.net/destek.html</SupportUrl>
+    <ProductName>YENİDOĞAN</ProductName>
+    <PublisherName>ENES ŞAVUR</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8487BC6C05EAEE7C54DF6437AB29538465325BC3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>YENİDOĞAN V3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="kutuphane">
+      <HintPath>..\kutuphane.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alım.Designer.cs">
+      <DependentUpon>alım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alımfis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alımfis.Designer.cs">
+      <DependentUpon>alımfis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duzenleme.Designer.cs">
+      <DependentUpon>duzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fis.Designer.cs">
+      <DependentUpon>fis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fissil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fissil.Designer.cs">
+      <DependentUpon>fissil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gider.Designer.cs">
+      <DependentUpon>gider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gunluk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gunluk.Designer.cs">
+      <DependentUpon>gunluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GÜNLÜK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GÜNLÜK.Designer.cs">
+      <DependentUpon>GÜNLÜK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iade.Designer.cs">
+      <DependentUpon>iade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iadefis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iadefis.Designer.cs">
+      <DependentUpon>iadefis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iadeportfoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iadeportfoy.Designer.cs">
+      <DependentUpon>iadeportfoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri.Designer.cs">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteridetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteridetay.Designer.cs">
+      <DependentUpon>musteridetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriekle.Designer.cs">
+      <DependentUpon>musteriekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriportfoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriportfoy.Designer.cs">
+      <DependentUpon>musteriportfoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporlama.Designer.cs">
+      <DependentUpon>raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Responsive.cs" />
+    <Compile Include="rutform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rutform.Designer.cs">
+      <DependentUpon>rutform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok.Designer.cs">
+      <DependentUpon>stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vt.cs" />
+    <Compile Include="ürünara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ürünara.Designer.cs">
+      <DependentUpon>ürünara.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alım.resx">
+      <DependentUpon>alım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alımfis.resx">
+      <DependentUpon>alımfis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duzenleme.resx">
+      <DependentUpon>duzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fis.resx">
+      <DependentUpon>fis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fissil.resx">
+      <DependentUpon>fissil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gider.resx">
+      <DependentUpon>gider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gunluk.resx">
+      <DependentUpon>gunluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GÜNLÜK.resx">
+      <DependentUpon>GÜNLÜK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iade.resx">
+      <DependentUpon>iade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iadefis.resx">
+      <DependentUpon>iadefis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iadeportfoy.resx">
+      <DependentUpon>iadeportfoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri.resx">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteridetay.resx">
+      <DependentUpon>musteridetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriekle.resx">
+      <DependentUpon>musteriekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriportfoy.resx">
+      <DependentUpon>musteriportfoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raporlama.resx">
+      <DependentUpon>raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rutform.resx">
+      <DependentUpon>rutform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ürünara.resx">
+      <DependentUpon>ürünara.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="YENİDOĞAN V3_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap buton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-sanitizer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tahini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\route %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeşil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Aproved_Outline_Approved-01_3545103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caribic-blue-texturesgloho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YENİDOĞAN - HELVALARI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_software_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_software_update %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product-sale-report-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales-report-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-4-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casing-6-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compass-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolly-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie-chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart_Bar_3D_Ascending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close2.png" />
+    <None Include="Resources\Close1.png" />
+    <None Include="Resources\tahin.png" />
+    <None Include="Resources\timer1.png" />
+    <None Include="Resources\adsss2.png" />
+    <None Include="Resources\retail.png" />
+    <None Include="Resources\adsss1.png" />
+    <None Include="Resources\adsss.png" />
+    <None Include="Resources\ade.png" />
+    <None Include="Resources\minus11.png" />
+    <None Include="Resources\settings-4-icon1.png" />
+    <None Include="Resources\dolly-icon1.png" />
+    <None Include="Resources\tahini1.png" />
+    <None Include="Resources\pie-chart-icon1.png" />
+    <None Include="Resources\route %281%291.png" />
+    <None Include="Resources\compass-icon1.png" />
+    <None Include="Resources\save-money1.png" />
+    <None Include="bin\Debug\image\logo11.png" />
+    <Content Include="LOGO.ico" />
+    <None Include="Resources\week-1_11.png" />
+    <None Include="Resources\week-2_11.png" />
+    <None Include="Resources\Tools1.png" />
+    <None Include="Resources\Use11r.png" />
+    <None Include="Resources\person-icon.png" />
+    <None Include="Resources\casing-6-icon1.png" />
+    <None Include="Resources\cout-icon2.png" />
+    <None Include="Resources\person-icon %281%291.png" />
+    <None Include="Resources\list1.png" />
+    <None Include="Resources\sil11 %281%29.png" />
+    <None Include="Resources\Halt1.png" />
+    <None Include="Resources\Add1.png" />
+    <None Include="Resources\Sys.png" />
+    <None Include="Resources\Security.png" />
+    <None Include="Resources\key1.png" />
+    <None Include="Resources\search %281%291.png" />
+    <None Include="Resources\Select1.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\week-2_1.png" />
+    <None Include="Resources\week-1_1.png" />
+    <None Include="Resources\Select.png" />
+    <None Include="Resources\Upload.png" />
+    <None Include="Resources\Restart.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\download-6-icon.png" />
+    <None Include="Resources\upload-4-icon.png" />
+    <None Include="Resources\cout-icon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
